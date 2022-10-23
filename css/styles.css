@@ -1,0 +1,126 @@
+/* основний колір тексту #757575 */
+/* колір заголовків h3 #212121 */
+/* основний колір фону #FFFFFF */
+/* додатковий колір фону #F5F4FA */
+/* колір геро и футера #2F303A */
+/* колір контактів футера rgba(255, 255, 255, 0.6); */
+/*  */
+
+/* призначенн змінних */
+:root {
+	--primary-text-color: #757575;
+	--title-text-color: #212121;
+	--basic-white-color: #ffffff;
+	--logo-web: #2196f3;
+	--logo-header: #000000;
+	--hero-footer-bgc: #2f303a;
+	--contacts-footer-colors: rgba(255, 255, 255, 0.6);
+	--secondary-bgc: #f5f4fa;
+}
+
+/* body */
+body {
+	color: var(--primary-text-color);
+	background-color: var(--basic-white-color);
+	font-family: Roboto, sans-serif;
+}
+
+.background {
+	background-color: var(--secondary-bgc);
+}
+.list {
+	list-style: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+/* Header */
+/* логотип*/
+.logo {
+	color: var(--logo-web);
+	text-decoration: none;
+}
+.logo-header {
+	color: var(--logo-header);
+}
+/* кнопки навігації */
+.nav-link {
+	color: var(--title-text-color);
+	text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+	color: var(--logo-web);
+}
+
+.nav-link.current {
+	color: var(--logo-web);
+}
+
+/* ссилки на пошту і телефон */
+.link-contacts {
+	color: var(--primary-text-color);
+	text-decoration: none;
+}
+
+.link-contacts:hover,
+.link-contacts:focus {
+	color: var(--logo-web);
+}
+
+/* HERO */
+
+.hero-section {
+	background-color: var(--hero-footer-bgc);
+}
+
+.hero-title {
+	color: var(--basic-white-color);
+}
+
+.button {
+	background-color: var(--logo-web);
+	color: var(--basic-white-color);
+}
+
+/* Стилі заголовків */
+.title {
+	color: var(--title-text-color);
+}
+
+.subtitle {
+	color: var(--title-text-color);
+}
+
+.title-portfolio {
+	color: var(--title-text-color);
+}
+
+/* FOOTER */
+.footer {
+	background-color: var(--hero-footer-bgc);
+}
+.logo-footer {
+	color: var(--basic-white-color);
+}
+
+.link-addresse-footer {
+	color: var(--basic-white-color);
+	text-decoration: none;
+}
+.link-contacts-footer {
+	color: var(--contacts-footer-colors);
+	text-decoration: none;
+}
