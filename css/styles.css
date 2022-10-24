@@ -49,23 +49,36 @@ body {
 /* логотип*/
 .logo {
 	color: var(--logo-web);
+	font-family: "Raleway";
+
+	font-weight: 700;
+	font-size: 26px;
+	line-height: calc(31 / 26);
+
+	letter-spacing: 0.03em;
 	text-decoration: none;
 }
 .logo-header {
 	color: var(--logo-header);
 }
 /* кнопки навігації */
-.nav-link {
+.site-nav .link {
 	color: var(--title-text-color);
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: calc(16 / 14);
+	letter-spacing: 0.02em;
+
 	text-decoration: none;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
 	color: var(--logo-web);
 }
 
-.nav-link.current {
+.link.current {
 	color: var(--logo-web);
 }
 
